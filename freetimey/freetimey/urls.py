@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from trips.views import greeting
+from trip.views import greeting
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
