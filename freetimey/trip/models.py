@@ -8,3 +8,9 @@ class Trip(models.Model):
     state = models.CharField(max_length=63)
     area = models.CharField(max_length=63, help_text='e.g. Little Bear, Denali, Sante Fe, West Coast, ...')
     type = models.CharField(max_length=63, help_text='e.g. Mountaineering, Hiking, Family Vacation, Climbing, ...')
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
