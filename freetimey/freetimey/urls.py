@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 
-from trip.views import greeting
+from trip.views import homepage
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', greeting),
-]
+    url(r'^$', homepage),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
