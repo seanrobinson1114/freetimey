@@ -23,4 +23,4 @@ from trip.views import homepage
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', homepage),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
