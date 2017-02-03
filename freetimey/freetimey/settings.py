@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'trip',
-    'twitter_bootstrap'
+    #'twitter_bootstrap'
 ]
 
 MIDDLEWARE = [
