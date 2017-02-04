@@ -23,5 +23,8 @@ class TripImage(models.Model):
     description = models.CharField(max_length=63, null=True, help_text="trip_name + pic file name")
     image = models.ImageField(storage=fs)
 
+    def __str__(self):
+        return self.description
+
     class Meta:
         ordering = ['name']
