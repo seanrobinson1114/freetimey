@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'trip',
-    'twitter_bootstrap'
+    #'twitter_bootstrap'
 ]
 
 MIDDLEWARE = [
@@ -131,3 +131,4 @@ STATICFILES_DIRS = (
 )
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
