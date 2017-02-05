@@ -20,7 +20,7 @@ def homepage(request):
         trip_images.images[index] = getTripImages(trip)
     template = loader.get_template('index.html')
     # context = Context({'trip_list': trip_list, 'image_list': image_list, 'trip_images': trip_images})
-    context = Context({'trip_list': trip_list, 'trip_images': trip_images, 'number_of_trips': range(len(trip_list))})
+    context = Context({'trip_list': trip_list, 'trip_images': trip_images})
     output = template.render(context)
     return HttpResponse(output)
 
